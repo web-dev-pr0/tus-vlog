@@ -1,0 +1,20 @@
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem; /* perfect size */
+  line-height: 1;
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>TUS VLOG - Affiliate Link List</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
@@ -25,61 +24,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              temu: "#FF6000",
-              "background-light": "#ffffff",
-              "background-dark": "#0a0a0a",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-            borderRadius: {
-              btn: "0.75rem",
-            },
-          },
-        },
-      };
-    </script>
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          font-family: "Inter", sans-serif;
-          -webkit-tap-highlight-color: transparent;
-        }
-      }
+    <link rel="stylesheet" href="style.css" />
 
-      .social-icon {
-        width: 44px;
-        height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.25rem; /* perfect size */
-        line-height: 1;
-      }
-    </style>
-    <style>
-      body {
-        min-height: max(884px, 100dvh);
-      }
-    </style>
-    <script>
-      // Detect system theme on load
-      if (
-        localStorage.theme === "dark" ||
-        (!localStorage.theme &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
+    <script src="script.js" defer></script>
+    <script src="tailwind.config.js"></script>
+    <title>MAIN PAGE | TUS VLOG</title>
   </head>
   <body
     class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300"
@@ -106,7 +55,7 @@
         <p
           class="text-slate-500 dark:text-slate-400 max-w-[350px] mx-auto text-sm font-medium leading-relaxed"
         >
-          Ψάρεμα &amp; Ψαροντούφεκο<br />
+         <i class="fa-solid fa-heart"></i>Ψάρεμα &amp; Ψαροντούφεκο<i class="fa-solid fa-heart"></i><br />
           Βρες τον εξοπλισμό που χρησιμοποιώ.
         </p>
       </header>
@@ -118,16 +67,16 @@
           <div
             class="w-12 h-12 flex-shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-white"
           >
-            <span class="material-symbols-outlined text-2xl">set_meal</span>
+            <span class="material-symbols-outlined text-2xl">phishing</span>
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="text-white font-bold text-base leading-tight">
-              Shop Fishing Reels on Temu
+              Best Selling Lures
             </h3>
             <p
               class="text-white/80 text-[11px] font-medium uppercase tracking-wider"
             >
-              Top Rated Deals
+              Catch More Fish
             </p>
           </div>
           <div
@@ -147,12 +96,12 @@
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="text-white font-bold text-base leading-tight">
-              Spearfishing Gear Deals
+              Best Selling Lures
             </h3>
             <p
               class="text-white/80 text-[11px] font-medium uppercase tracking-wider"
             >
-              Limited Time Offers
+              Catch More Fish
             </p>
           </div>
           <div
@@ -168,16 +117,16 @@
           <div
             class="w-12 h-12 flex-shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-white"
           >
-            <span class="material-symbols-outlined text-2xl">water_drop</span>
+            <span class="material-symbols-outlined text-2xl">phishing</span>
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="text-white font-bold text-base leading-tight">
-              Waterproof Tackle Bags
+              Best Selling Lures
             </h3>
             <p
               class="text-white/80 text-[11px] font-medium uppercase tracking-wider"
             >
-              Saltwater Ready
+              Catch More Fish
             </p>
           </div>
           <div
@@ -193,16 +142,16 @@
           <div
             class="w-12 h-12 flex-shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-white"
           >
-            <span class="material-symbols-outlined text-2xl">visibility</span>
+            <span class="material-symbols-outlined text-2xl">phishing</span>
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="text-white font-bold text-base leading-tight">
-              Spearfishing Mask &amp; Fins
+              Best Selling Lures
             </h3>
             <p
               class="text-white/80 text-[11px] font-medium uppercase tracking-wider"
             >
-              Underwater Clarity
+              Catch More Fish
             </p>
           </div>
           <div
@@ -218,7 +167,7 @@
           <div
             class="w-12 h-12 flex-shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-white"
           >
-            <span class="material-symbols-outlined text-2xl">capture</span>
+            <span class="material-symbols-outlined text-2xl">phishing</span>
           </div>
           <div class="flex-1 min-w-0">
             <h3 class="text-white font-bold text-base leading-tight">
@@ -309,8 +258,9 @@
         <p
           class="text-[10px] font-bold text-slate-400 dark:text-slate-600 uppercase tracking-[0.2em] mb-2"
         >
-          © 2026 TUS VLOG
+          © <span id="current-year"></span> TUS VLOG
         </p>
+
         <p
           class="text-[9px] text-slate-400 dark:text-slate-600 px-10 leading-relaxed uppercase tracking-wider"
         >
