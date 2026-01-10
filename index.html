@@ -17,6 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -43,6 +51,16 @@
           font-family: "Inter", sans-serif;
           -webkit-tap-highlight-color: transparent;
         }
+      }
+
+      .social-icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem; /* perfect size */
+        line-height: 1;
       }
     </style>
     <style>
@@ -228,12 +246,65 @@
 
       <footer class="mt-16 text-center">
         <div class="flex justify-center gap-6 mb-8">
-          <button
-            class="p-2 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-400 dark:text-slate-500"
-            onclick="document.documentElement.classList.toggle('dark')"
-          >
-            <span class="material-icons-round">dark_mode</span>
-          </button>
+          <div class="flex justify-center gap-4 mb-8">
+            <!-- YouTube -->
+            <a
+              href="https://www.youtube.com/channel/UCSFXSjMC23i_dBJ37Tdd4Jg/join"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-icon rounded-full bg-red-600/10 hover:bg-red-600/20 text-red-600 transition"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/tus.vlog/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-icon rounded-full bg-pink-600/10 hover:bg-pink-600/20 text-pink-600 transition"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="https://www.tiktok.com/@tusvlog"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-icon rounded-full bg-slate-500/10 hover:bg-slate-500/20 text-slate-500 transition"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/p/Tusaras-61575915256682/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-icon rounded-full bg-blue-600/10 hover:bg-blue-600/20 text-blue-600 transition"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <!-- Buy Me A Coffee -->
+            <a
+              href="https://buymeacoffee.com/tusvlog"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="social-icon rounded-full bg-yellow-400/10 hover:bg-yellow-400/20 text-yellow-500 transition"
+            >
+              <i class="fa-solid fa-mug-hot"></i>
+            </a>
+
+            <!-- Dark mode toggle -->
+            <button
+              class="social-icon rounded-full bg-slate-100 dark:bg-slate-900 text-slate-400 dark:text-slate-500"
+              onclick="document.documentElement.classList.toggle('dark')"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
         </div>
         <p
           class="text-[10px] font-bold text-slate-400 dark:text-slate-600 uppercase tracking-[0.2em] mb-2"
